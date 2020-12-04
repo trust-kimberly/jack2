@@ -1,0 +1,174 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #009900;
+    transition: 0.6s ease-in-out;
+
+}
+
+a.artist:hover {
+    color: #74a39b;
+    transition: 0.6s ease-in-out;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'IM Fell DW Pica', serif;
+    margin-top: 0;
+}
+
+p {
+    font-size: 18px;
+    font-family: 'IM Fell DW Pica', serif;
+}
+
+p.bottom {
+    padding-bottom: 30px;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 25vh 65vh 10vh;
+    grid-template-columns: 50vw 50vw;
+    grid-template-areas: 
+    "header header"
+    "content content"
+    "footer1 footer2";
+}
+
+header {
+    grid-area: header;
+    background-color: white;
+    padding: 2vh 5vw;
+    justify-self: center;
+    align-self: center;
+}
+
+#name {
+    width: 90vw;
+    height: auto;
+}
+
+.content {
+    grid-area: content;
+    padding: 0 5vw;
+    overflow: scroll;
+    top: 0;
+}
+
+#sayItHidden {
+    width: 30vw;
+    height: 30vw;
+    display: none;
+    position: absolute;
+    object-fit: cover;
+    z-index: -1;
+    top: 0;
+    padding-top: 54px;
+    padding-left: 50vw;
+}
+  
+#sayIt:hover + #sayItHidden {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+#colorSongHidden {
+    width: 30vw;
+    height: 30vw;
+    display: none;
+    position: absolute;
+    padding-top: 114px;
+    padding-left: 50vw;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+#colorSong:hover + #colorSongHidden {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+  
+#belvedereHidden {
+    width: 30vw;
+    height: 30vw;
+    display: none;
+    position: absolute;
+    padding-top: 708px;
+    padding-left: 50vw;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#belvedere:hover + #belvedereHidden {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+#parkMusicHidden {
+    width: 30vw;
+    height: 30vw;
+    display: none;
+    position: absolute;
+    padding-top: 770px;
+    padding-left: 50vw;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+  
+#parkMusic:hover + #parkMusicHidden {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+#fubtHidden {
+    width: 30vw;
+    height: 22vw;
+    display: none;
+    position: absolute;
+    padding-top: 912px;
+    padding-left: 50vw;
+    top: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#fubt:hover + #fubtHidden {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+}
+
+.footer1 {
+    font-size: 10px;
+    font-family: helvetica;
+    grid-area: footer1;
+    padding: 0 5vw;
+    justify-self: start;
+    align-self: center;
+}
+
+.footer2 {
+    font-size: 16px;
+    font-family: helvetica;
+    grid-area: footer2;
+    padding: 0 5vw;
+    justify-self: end;
+    align-self: center;
+}
