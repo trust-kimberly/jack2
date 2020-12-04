@@ -24,6 +24,7 @@ h2 {
     font-weight: 400;
     font-family: 'IM Fell DW Pica', serif;
     margin-top: 0;
+    margin-bottom: 40px;
 }
 
 p {
@@ -32,7 +33,7 @@ p {
 }
 
 p.bottom {
-    padding-bottom: 30px;
+    padding-bottom: 64px;
 }
 
 .container {
@@ -48,19 +49,19 @@ p.bottom {
 header {
     grid-area: header;
     background-color: white;
-    padding: 2vh 5vw;
+    padding: 2vh 8vw;
     justify-self: center;
     align-self: center;
 }
 
 #name {
-    width: 90vw;
+    width: 84vw;
     height: auto;
 }
 
 .content {
     grid-area: content;
-    padding: 0 5vw;
+    padding: 0 8vw;
     overflow: scroll;
     top: 0;
 }
@@ -73,7 +74,7 @@ header {
     object-fit: cover;
     z-index: -1;
     top: 0;
-    padding-top: 54px;
+    padding-top: 74px;
     padding-left: 50vw;
 }
   
@@ -88,7 +89,7 @@ header {
     height: 30vw;
     display: none;
     position: absolute;
-    padding-top: 114px;
+    padding-top: 134px;
     padding-left: 50vw;
     top: 0;
     object-fit: cover;
@@ -106,7 +107,7 @@ header {
     height: 30vw;
     display: none;
     position: absolute;
-    padding-top: 708px;
+    padding-top: 836px;
     padding-left: 50vw;
     top: 0;
     object-fit: cover;
@@ -124,7 +125,7 @@ header {
     height: 30vw;
     display: none;
     position: absolute;
-    padding-top: 770px;
+    padding-top: 900px;
     padding-left: 50vw;
     top: 0;
     object-fit: cover;
@@ -139,10 +140,10 @@ header {
 
 #fubtHidden {
     width: 30vw;
-    height: 22vw;
+    height: 25vw;
     display: none;
     position: absolute;
-    padding-top: 912px;
+    padding-top: 1094px;
     padding-left: 50vw;
     top: 0;
     object-fit: cover;
@@ -159,7 +160,7 @@ header {
     font-size: 10px;
     font-family: helvetica;
     grid-area: footer1;
-    padding: 0 5vw;
+    padding: 0 8vw;
     justify-self: start;
     align-self: center;
 }
@@ -168,7 +169,7 @@ header {
     font-size: 16px;
     font-family: helvetica;
     grid-area: footer2;
-    padding: 0 5vw;
+    padding: 0 8vw;
     justify-self: end;
     align-self: center;
 }
